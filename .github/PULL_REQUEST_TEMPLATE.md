@@ -40,11 +40,9 @@ Insert short description of PR here.
   - [ ] Laravel is used
     - [ ] Is the route file located in a dedicated file for the resource type? [[LRVL6.1](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1811021859/Laravel+Guidelines#LRVL6.1%3A-Routes-MUST-be-grouped-into-different-files-depending-on-their-resource.)]
     - [ ] Was a Controller class used instead of a route callback? [[LRVL6.2](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1811021859/Laravel+Guidelines#LRVL6.2%3A-Routes-MUST-not-have-callbacks.-Utilize-controller-classes-at-all-times.)]
-
 - [ ] New environment variables were added.
   - [ ] Was the `.env.example` file updated? [[DOC4](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1797718106/Documentation#DOC4%3A--The-env.example-File)]
   - [ ] If Laravel was used, was as a configuration file used? [[LARVL1.5](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1811021859/Laravel+Guidelines#LRVL1.5%3A-Environment-variables-MUST-be-accessed-through-configuration-files-and-not-directly.)]
-
 - [ ] Database changes were made.
   - [ ] Was the ERD updated? [[DOC2](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1797718106/Documentation#DOC2%3A-Entity-Relationship-Diagram), [DAT1.7](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1807450133/Data+Guidelines#DAT1.7%3A-All-modifications-made-to-the-database-MUST-be-reflected-on-the-Entity-Relationship-Diagram-and-all-other-appropriate-documentation.)]
   - [ ] Are the changes backwards compatible? [[DAT1.8](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1807450133/Data+Guidelines#DAT1.8%3A-All-database-schema-modifications-after-an-application-has-been-released-to-production-MUST-be-backwards-compatible%2C-without-the-need-for-seeding-data-for-existing-rows.)]
@@ -55,7 +53,6 @@ Insert short description of PR here.
   - [ ] A new table was created
     - [ ] Does the table name match the ORM model name in plural form and in `snake_case`? [[DAT2.2](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/edit-v2/1807450133#DAT2.2%3A-Database-table-names-MUST-match-it%E2%80%99s-model-name-in-plural-form-and-in-snake_case.)]
     - [ ] Does it have `created_at` and `updated_at` `TIMESTAMP` columns? [[DAT1.5](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1807450133/Data+Guidelines#DAT1.5%3A-All-tables-MUST-utilize-timestamps-for-row-creation-and-updates-by-utilizing-created_at-and-updated_at-TIMESTAMP-columns-except-for-pivot-tables.), [LRVL2.4](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1811021859/Laravel+Guidelines#LRVL2.4%3A-Models-MUST-cast-timestamp-columns.)]
-
   - [ ] A new column was created
     - [ ] Is the column name in `snake_case`? [[DAT2.3](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/edit-v2/1807450133#DAT2.3%3A-Database-column-names-must-always-be-in-snake_case.)]
     - [ ] If it is a `boolean` column, is the column name prefixed with `is_`? [[DAT2.4](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/edit-v2/1807450133#DAT2.4%3A-Database-columns-with-a-boolean-column-type-MUST-have-names-prefixed-with-is.)]
@@ -66,7 +63,6 @@ Insert short description of PR here.
     - [ ] Is a default value not declared on the database? [[DAT3.1](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1807450133/Data+Guidelines#DAT3.1%3A-Declaring-default-values-for-non-nullable-columns-within-the-database-SHOULD-NOT-be-done.-Instead%2C-declare-default-values-within-the-application-code-when-necessary.)]
     - [ ] Is the `ENUM` database data type not used? [[DAT3.2](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1807450133/Data+Guidelines#DAT3.2%3A-ENUM-column-types-SHOULD-NOT-be-used.-Instead-utilize-the-language's-syntax-for-enums-and-use-model-casting.)]
     - [ ] If it stores a monetary value, is it stored as a signed integer in cents? [[DAT3.3](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1807450133/Data+Guidelines#DAT3.3%3A--Monetary-values-MUST-be-stored-and-processed-as-signed-integers-in-cents-and-MUST-only-be-converted-back-to-a-float-when-displaying-to-the-user.)]
-
 - [ ] Frontend changes were made.
   - [ ] HTML is used
     - [ ] Is there only one `<h1/>` element in the page when it is rendered? [[HTML1.11](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1811021877/HTML+CSS+Guidelines#HTML1.11%3A-The-following-typography-elements-MUST-be-utilized-properly%3A)]
