@@ -29,7 +29,6 @@ Insert short description of PR here.
   - [ ] Laravel is used
     - [ ] If a job was used, was it dispatched after the response? [[LRVL7.7](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1811021859/Laravel+Guidelines#LRVL7.7%3A-When-utilized-within-the-context-of-an-HTTP-request%2C-jobs-MUST-be-dispatched-after-a-response-in-order-to-ensure-that-the-job-will-only-be-queued-after-the-request-has-been-successfully-processed.)]
     - [ ] If cache was involved, was a `CacheKey` class used? [[LRVL8.1]()]
-
 - [ ] A new endpoint was created.
   - [ ] Does the endpoint path follow the proper naming convention? [[GEN3.1](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1797784072/General+Conventions#GEN3.1%3A-URL-Paths-MUST-follow-the-following-naming-conventions%3A)]
   - [ ] Is the endpoint using the correct HTTP method? [[GEN3.2](https://svengroup.atlassian.net/wiki/spaces/TSD/pages/1797784072/General+Conventions#GEN3.2%3A-All-applications-MUST-utilize-the-correct-HTTP-method-for-an-action.)]
